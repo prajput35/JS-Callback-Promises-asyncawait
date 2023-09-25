@@ -8,6 +8,12 @@ function two() {
 
 one(two);
 
+/* output
+step 1 complete, call step 2
+step 2
+*/
+
+
 //------------------------------------
 function myDisplayer(ans) {
   console.log('answer is:', ans);
