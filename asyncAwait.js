@@ -1,5 +1,6 @@
 async function myFunction() {
-  return "Hello return from async function without await and promise";
+  console.log("Hello return from async function without await and promise");
+  //if no return msg, then async will implicitly return a promise resolved to 'undefined'
 }
 
 myFunction().then((value)=>console.log(value))
@@ -21,6 +22,8 @@ let order = (time) => {
 function simpleOrder(){
   return Promise.resolve('simple promise return for await keyword');
 }
+
+ 
 
 test = async () =>{
   try{
@@ -47,7 +50,7 @@ test = async () =>{
 
 //2 ways to call below function
 //method 1
-//test();
+test();
 
 //method 2 below to hvae chaining if somthing is returned by async function
 //test().then((v)=>console.log(v));

@@ -8,7 +8,7 @@ let p1 = new Promise((resolve, reject) => {
 
 p1.then((value) => {
   console.log(value);
-  console.log(p1);
+  console.log('p1:',p1);
 
   let p2 = new Promise((resolve, reject) => {
    resolve('promise 2'); 
